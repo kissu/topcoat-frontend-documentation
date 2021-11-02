@@ -3,9 +3,9 @@ home: true
 heroText: TopCoat Docs
 tagline: Everything a tech team ever dreamt of
 actions:
-  - text: Builder-fe github
-    link: https://github.com/topcoat-data/topcoat-builder-fedd
-    type: secondary
+  # - text: Builder-fe github
+  #   link: https://github.com/topcoat-data/topcoat-builder-fedd
+  #   type: secondary
   - text: Get Started 🚀
     link: /guide/
     type: primary

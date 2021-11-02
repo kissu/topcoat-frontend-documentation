@@ -1,5 +1,6 @@
 module.exports = {
   port: 1234,
+  open: true,
   head: [['link', { rel: 'icon', href: '/favicon.png' }]],
   plugins: [
     '@vuepress/plugin-search',
@@ -7,6 +8,28 @@ module.exports = {
   themeConfig: {
     logo: '/favicon.png',
     logoDark: '/favicon_dark.png',
+    //? sidebar
+    sidebar: [
+      // SidebarItem
+      {
+        text: 'Foo',
+        link: '/foo/',
+        children: [
+          // SidebarItem
+          {
+            text: 'github',
+            link: 'https://github.com',
+            children: [],
+          },
+          // string - page file path
+          '/foo/bar.md',
+        ],
+      },
+      // string - page file path
+      '/bar/README.md',
+    ],
+
+    //? navbar
     navbar: [
       // nested group - max depth is 2
       {
