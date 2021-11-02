@@ -1,0 +1,26 @@
+{
+  "name": "frontend-documentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Konstantin BIFERT <konstantin@passionatepeople.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.3.0",
+    "@vuepress/bundler-vite": "^2.0.0-beta.27",
+    "@vuepress/plugin-active-header-links": "^1.8.2",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-container": "^2.0.0-beta.8",
+    "@vuepress/plugin-git": "^2.0.0-alpha.1",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-search": "^2.0.0-beta.27",
+    "@vuepress/shared-utils": "^1.8.2",
+    "lru-cache": "^6.0.0",
+    "vuepress-vite": "^2.0.0-beta.27"
+  }
+}
