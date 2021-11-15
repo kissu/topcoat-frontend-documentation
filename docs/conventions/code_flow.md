@@ -15,6 +15,10 @@ Here is a list of all the available [git hooks](https://githooks.com/), we'll im
 - if everything is fine in term of linting, we may check your actual git commit message and see if it's structured enough (Commitlint)
 - your commit is done! ✅
 
+::: danger
+All of these validators can all be bypassed by suffixing `--no-verify` flag to your git commit message, please try to stick to it 99% of the time tho! 🙏👼
+:::
+
 ## Pre-push hook
 - when we'll get some tests
 - run them locally, before even pushing them remotely
