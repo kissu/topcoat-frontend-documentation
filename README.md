@@ -5,7 +5,7 @@ This documentation is focused on the Frontend part.
 Run `npm install -g pnpm` if not already done.
 
 To read this one, you can do
-```
+```bash
 pnpm i # install all dependencies
 pnpm dev # runs the actual documentation
 ```
