@@ -15,3 +15,5 @@ Or you can even use [`ni`](https://github.com/antfu/ni) if you'd like, that way 
 This is using [Vite](https://vitejs.dev/), so you'll get some super fast launch and refresh.
 
 For any configuration, the main entry point is `/docs/.vuepress/config.js` and the documentation for this Vuepress project is located here on [this Github](https://v2.vuepress.vuejs.org/).
+
+PS: There is not linting or alike here, please still try to keep some consistency in your git commit messages.
