@@ -1,64 +1,133 @@
 module.exports = {
   port: 1234,
-  open: true,
-  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
+  open: false, // if you want it to open automatically
+  head: [['link', { rel: 'icon', href: '/favicon_dark.png' }]],
   plugins: [
     '@vuepress/plugin-search',
   ],
   themeConfig: {
     logo: '/favicon.png',
     logoDark: '/favicon_dark.png',
-    //? sidebar
+    docsDir: 'docs',
+    docsRepo: 'https://github.com/topcoat-data/frontend-documentation',
+    markdown: {
+      extractHeaders: [2, 3]
+    },
+    sidebarDepth: 2,
     sidebar: [
-      // SidebarItem
       {
-        text: 'Foo',
-        link: '/foo/',
+        text: 'Guide',
+        link: '/guide.md',
+      },
+      {
+        text: 'Tools',
         children: [
-          // SidebarItem
           {
-            text: 'github',
-            link: 'https://github.com',
-            children: [],
+            text: 'Packages',
+            link: '/tools/packages.md'
           },
-          // string - page file path
-          '/foo/bar.md',
+          {
+            text: 'Guidelines',
+            link: '/tools/guidelines.md'
+          },
+          {
+            text: 'VScode tips',
+            link: '/tools/vscode.md'
+          },
         ],
       },
-      // string - page file path
-      '/bar/README.md',
+      {
+        text: 'Conventions',
+        children: [
+          {
+            text: 'Code flow',
+            link: '/conventions/code_flow.md'
+          },
+          {
+            text: 'Routing and naming',
+            link: '/conventions/routing.md'
+          },
+          {
+            text: 'Utility components',
+            link: '/conventions/utility_components.md'
+          },
+        ],
+      },
+      {
+        text: 'Testing',
+        children: [
+          {
+            text: 'Unit',
+            link: '/testing/unit.md',
+          },
+          {
+            text: 'E2E',
+            link: '/testing/e2e.md',
+          },
+        ],
+      },
+      {
+        text: 'Known issues',
+        link: '/known_issues.md',
+      },
     ],
 
     //? navbar
     navbar: [
-      // nested group - max depth is 2
       {
-        text: 'Group',
+        text: 'Guide',
+        link: '/guide',
+      },
+      {
+        text: 'Github repos',
         children: [
           {
-            text: 'SubGroup',
-            children: ['/group/sub/foo.md', '/group/sub/bar.md'],
+            text: 'Internal',
+            children: [
+              {
+                text: 'Core frontend 🌠',
+                link: 'https://github.com/topcoat-data/topcoat-core-fe',
+              },
+              {
+                text: 'Expandable modules 💅',
+                link: 'https://github.com/topcoat-data/expandable-modules',
+              },
+              {
+                text: 'Builder FE ✍️',
+                link: 'https://github.com/topcoat-data/topcoat-builder-fe',
+              },
+              {
+                text: 'Core Backend 🚂',
+                link: 'https://github.com/topcoat-data/topcoat-core',
+              },
+              {
+                text: '(old) Public 🖌️',
+                link: 'https://github.com/topcoat-data/topcoat-public',
+              },
+              {
+                text: 'This documentation 📖',
+                link: 'https://github.com/topcoat-data/frontend-documentation',
+              },
+            ],
           },
         ],
       },
-      // control when should the item be active
       {
-        text: 'Group 2',
+        text: 'Useful links',
         children: [
           {
-            text: 'Always active',
-            link: '/',
-            // this item will always be active
-            activeMatch: '/',
+            text: 'TopCoat Organization 🧑‍🤝‍🧑',
+            link: 'https://github.com/topcoat-data',
           },
           {
-            text: 'Active on /foo/',
-            link: '/not-foo/',
-            // this item will be active when current route path starts with /foo/
-            // regular expression is supported
-            activeMatch: '^/foo/',
+            text: 'Kanban',
+            link: 'https://github.com/orgs/topcoat-data/projects/1',
           },
-        ],
+          {
+            text: 'Figma Design System',
+            link: 'https://www.figma.com/file/fo2cq0m7EcsFfjngXk8m8g/TopCoat-Design-System-v1.0?node-id=3%3A0',
+          },
+        ]
       },
     ],
   }

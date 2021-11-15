@@ -7,7 +7,7 @@ actions:
   #   link: https://github.com/topcoat-data/topcoat-builder-fedd
   #   type: secondary
   - text: Get Started 🚀
-    link: /guide/
+    link: /guide.html
     type: primary
 features:
   - title: Tools
