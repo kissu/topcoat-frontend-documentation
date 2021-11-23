@@ -31,7 +31,7 @@ module.exports = {
             link: '/tools/guidelines.md'
           },
           {
-            text: 'VScode tips',
+            text: 'VScode extensions/tips',
             link: '/tools/vscode.md'
           },
         ],
@@ -47,10 +47,6 @@ module.exports = {
             text: 'Routing and naming',
             link: '/conventions/routing.md'
           },
-          {
-            text: 'Utility components',
-            link: '/conventions/utility_components.md'
-          },
         ],
       },
       {
@@ -65,6 +61,10 @@ module.exports = {
             link: '/testing/e2e.md',
           },
         ],
+      },
+      {
+        text: 'Deployment',
+        link: '/deployment.md',
       },
       {
         text: 'Known issues',
@@ -124,8 +124,8 @@ module.exports = {
             link: 'https://github.com/orgs/topcoat-data/projects/1',
           },
           {
-            text: 'Figma Design System',
-            link: 'https://www.figma.com/file/fo2cq0m7EcsFfjngXk8m8g/TopCoat-Design-System-v1.0?node-id=3%3A0',
+            text: 'Design System',
+            link: 'https://zeroheight.com/955194c45/p/117d4d-topcoat-data---component-design-guide',
           },
         ]
       },

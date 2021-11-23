@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: TopCoat Docs
-tagline: Everything a tech team ever dreamt of
+heroText: TopCoat Documentation
+tagline: Internal frontend-only focused documentation
 actions:
   # - text: Builder-fe github
   #   link: https://github.com/topcoat-data/topcoat-builder-fedd

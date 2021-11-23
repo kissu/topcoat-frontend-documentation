@@ -12,6 +12,24 @@ Since we're on a modern bleeding-edge yet stable stack, rather use the fastest a
 
 It is properly battle-tested, fits well with Windi and will be used accross all of our projects. This is also of course well mantained. If some specific browsers support is required, please refer to this [guide](https://vitejs.dev/guide/#browser-support).
 
+## [Env variables](https://vitejs.dev/guide/env-and-mode.html#env-variables) with Vite
+
+Get your variable into `.env` and call it in your template with
+
+```js
+data() {
+  return {
+    envVariable: import.meta.env.VITE_TEST,
+  }
+},
+```
+Then, you'll be able to use it in your template with the following
+```html
+<p>My env variable: {{ envVariable }}</p>
+```
+
+If you want to use an env variable into the `vite.config.ts` itself, use [the following](https://stackoverflow.com/a/66389044/8816585).
+
 ## [Pinia](https://pinia.esm.dev/)
 
 Pinia is used as a global store, basically a replacement for Vuex with some QoL improvements and less boilerplate (no more mutations needed).
@@ -19,6 +37,8 @@ Pinia is used as a global store, basically a replacement for Vuex with some QoL 
 ## [ESlint](https://eslint.org/) + [Prettier](https://prettier.io/)
 
 Those tools will provide us some nice code formatting and linting, to avoid the most common errors. Please follow the [following config](./vscode.md#how-to-setup-eslint-prettier) for the full configuration.
+
+This setup will apply on a pre-commit hook, so it will work great even if you don't use VScode. There should be **no errors** during the commit for it to be accepted tho.
 
 ## [Vue3 devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
 
@@ -36,12 +56,14 @@ This one is inspired from [Nuxt's routing system](https://github.com/hannoeru/vi
 
 Composition API is also auto-imported thanks to [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import)!
 
-## [VueUse](https://vueuse.org/)
+## [Commitlint](https://commitlint.js.org)
 
-This super popular library for Composition API will be helpful in a lot of cases.
+This tool will try to help us write more meaningful commits, by asking for a pattern of `type(scope?): subject` for example: `fix(navbar): toggle is not properly debounced`. A scope is not always mandatory but please try to do your best to write good commit messages. Checks on this will be done as a [pre-commit hook](/conventions/code_flow.html#pre-commit-hook) and the whole configuration can be found in the `commitlint.config.js` file.
 
-todo
+## [UnoCSS' Pure CSS icons](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
-## [commitlint](https://commitlint.js.org)
+We are using this flow to have simple and quick icons available in an efficient and practical way.
 
-todo
+All the icons can be found on [Icones JS](https://icones.js.org/), select an icon, prefix it with `i-` and add it's name like `i-fxemoji-chicken`. [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) is heavily recommended if you're working with VScode.
+
+We could load only some icon libraries to not have all of them downloaded locally, but as of today we're loading [every one of them locally](https://github.com/antfu/unplugin-icons#icons-data). If we want to have only a subset, we should download only `@iconify-json/mdi` for example (for the Material Design Icons). Having all of them locally is **of course NOT** impacting the final production build.
