@@ -43,7 +43,7 @@ Please do follow the following rules when creating a pull request:
 - create it when you start to code, as `draft` (you'll pass it to `open` when you're done coding)
 - ping the people concerned, especially when you're done coding and expect a review
 - name your dev branch with the `type/scope` pattern eg. `fix/navbar-toggle`
-- keep a [clean history](http://localhost:1234/conventions/code_flow.html#git-history) when merging into `dev` (`main` is reserved to the exposed production code)
+- keep a [clean history](/conventions/code_flow.html#git-history) when merging into `dev` (`main` is reserved to the exposed production code)
 - [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/) is globally a really good read when it comes down to code reviews
 
 ![](https://i.imgur.com/NP4b9OH.png)

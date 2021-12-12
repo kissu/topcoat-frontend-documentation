@@ -11,28 +11,30 @@
 | [Windi CSS v3](https://windicss.org/)                   | ✅                                                    | ✅                                                                                            |
 | Vuex                                                    | ✅ ([v3](https://vuex.vuejs.org/))                    | ✅ ([v4](https://next.vuex.vuejs.org/))                                                       |
 | Vue router                                              | ✅ ([v3](https://router.vuejs.org/installation.html)) | ✅ ([v4](https://next.router.vuejs.org/))                                                     |
-| [Pinia 🍍](https://pinia.esm.dev/)                       | ❌                                                    | ✅                                                                                            |
+| [Pinia 🍍](https://pinia.esm.dev/)                       | ✅                                                    | ✅                                                                                            |
 | [Storybook](https://github.com/storybookjs/storybook/)  | ✅                                                    | ✅                                                                                            |
 
 ## Expandable-modules
 
 ### Quick explanation of the production packages
 
-| Package                                            | Notes                                                        |
-| -------------------------------------------------- | ------------------------------------------------------------ |
-| Vue                                                |                                                              |
-| Vue router                                         |                                                              |
-| Pinia                                              | Used for our global store, Vuex-like                         |
-| [Vue-demi](https://www.npmjs.com/package/vue-demi) | Used to have packages working with Vue2 & 3 (may be removed) |
-| [Vueuse](https://vueuse.org/)                      | Set of utilities                                             |
+| Package                                                               | Notes                                                                 |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Vue                                                                   |                                                                       |
+| Vue router                                                            |                                                                       |
+| Pinia                                                                 | Used for our global store, Vuex-like                                  |
+| [Vue-demi](https://www.npmjs.com/package/vue-demi)                    | Used to have packages working with Vue2 & 3 (may be removed)          |
+| [Vueuse](https://vueuse.org/)                                         | Set of utilities                                                      |
+| [Lodash](https://lodash.com/)                                         | Details [here](/tools/guidelines.html#lodash-es) |
+| [windicss-runtime-dom](https://github.com/antfu/windicss-runtime-dom) | On the fly-generated WindiCSS utility classes (core SPA)              |
 
 ### Quick explanation of the development packages
 
 | Package             | Notes                                                                                |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | @babel/*            | Transpilling JS                                                                      |
-| commitlint          | [Explanation](http://localhost:1234/tools/guidelines.html#commitlint)                |
-| @iconify/json       | [Universal icons](http://localhost:1234/tools/guidelines.html#unocss-pure-css-icons) |
+| commitlint          | [Explanation](/tools/guidelines.html#commitlint)                |
+| @iconify/json       | [Universal icons](/tools/guidelines.html#unocss-pure-css-icons) |
 | @unocss/*           | [UnoCSS-related](https://antfu.me/posts/reimagine-atomic-css)                        |
 | cross-env           | [Better OS support](https://www.npmjs.com/package/cross-env)                         |
 | eslint/* + Prettier | Linting (+formatting) the JS                                                         |
@@ -40,8 +42,7 @@
 | husky               | [More friendly git hooks](https://github.com/typicode/husky)                         |
 | lint-staged         | [Linting only staged git files](https://github.com/okonet/lint-staged)               |
 | vite-*              | [Vite related plugins](https://vitejs.dev/)                                          |
-| unplugin-*            | [Unplugin ecosystem](https://github.com/unjs/unplugin)                               |
-| windicss-analysis | [CLI version](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) of the VScode extension
+| unplugin-*          | [Unplugin ecosystem](https://github.com/unjs/unplugin)                               |
 
 ## May be used
 

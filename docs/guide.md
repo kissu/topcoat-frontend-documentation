@@ -4,6 +4,8 @@
 You'll need PNPM to get started with any frontend project
 
 For this, run `npm install -g pnpm`
+
+In case of a problem, please refer to the [Known Issues](/known_issues.html) section.
 :::
 
 Then, read the `README.md`, we'll try to keep those as up-to date as possible!

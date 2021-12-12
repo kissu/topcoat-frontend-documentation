@@ -69,3 +69,20 @@ We are using this flow to have simple and quick icons available in an efficient 
 All the icons can be found on [Icones JS](https://icones.js.org/), select an icon, prefix it with `i-` and add it's name like `i-fxemoji-chicken`. [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) is heavily recommended if you're working with VScode.
 
 We could load only some icon libraries to not have all of them downloaded locally, but as of today we're loading [every one of them locally](https://github.com/antfu/unplugin-icons#icons-data). If we want to have only a subset, we should download only `@iconify-json/mdi` for example (for the Material Design Icons). Having all of them locally is **of course NOT** impacting the final production build.
+
+## Fonts
+
+Getting fonts locally is still the best thing to do (performance-wise), for this reason, [this website](https://google-webfonts-helper.herokuapp.com/fonts/inter?subsets=latin) is probably the best one to go (and it helps greatly with configuration too)!
+
+## [Lodash-es](https://www.npmjs.com/package/lodash-es)
+
+[Lodash](https://lodash.com/) is used to have a more generic JS toolbelt available, which is battle-tested and slick since we will import only what we need.
+To import it properly, you need to use this kind of syntax though
+```js
+import { cloneDeep } from 'lodash-es'
+```
+Then, you can use it as much as you'd like, feel free to spam it even for simple use-cases like the usual `JSON.parse(JSON.stringify(obj))`, because homemade functions are usually not handling all the [possible edge-cases](https://flaviocopes.com/how-to-clone-javascript-object/#json-serialization).
+
+## [Storybook](https://storybook.js.org/)
+
+This tool will be used to have clean components exposed to less tech people (designers, Product Team, etc...) and will allow for a better visualization of the possibilities given by our components. On top of enabling several types of tests (visual, a11y, interaction, etc...), it will also allow for a better development experience (you can see the changes in real time, and you can see the changes in the browser).
