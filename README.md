@@ -1,5 +1,7 @@
 # Documentation for the frontend
 
+![](https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=400&q=80)
+
 This documentation is focused on the Frontend part.
 
 Run `npm install -g pnpm` if not already done.
