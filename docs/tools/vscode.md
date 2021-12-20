@@ -10,9 +10,20 @@ IntelliSense for [Tailwind CSS](https://marketplace.visualstudio.com/items?itemN
 
 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar), recommended for Vue3 + TS <Badge type="danger" text="Highly recommended" vertical="top" /> <Badge type="tip" text="Vue3 only" vertical="top" />
 
+[Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind), opinionated sorter for TW, didn't tried it yet with Windi tho. <Badge type="danger" text="Highly recommended" vertical="top" />
+
+<details><summary>Recommended setting</summary>
+
+Set the following in your `settings.json`
+```json
+"headwind.runOnSave": true,
+```
+</details>
+
+
 [Better comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments), perfect if you'd like some more visibility in your codebase <Badge type="warning" text="Nice to have" vertical="top" />
 
-<details><summary>Konstantin's settings, we may add some as a team maybe? 😸</summary>
+<details><summary>kissu's settings, we may add some as a team maybe? 😸</summary>
 
 ```json
 "better-comments.tags": [
@@ -73,8 +84,6 @@ IntelliSense for [Tailwind CSS](https://marketplace.visualstudio.com/items?itemN
 [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag), pretty self explanatory, nice one to win few seconds.
 
 
-[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2), not sure if it's still needed because VScode may have released it officially in it's core.
-
 [Color Info](https://marketplace.visualstudio.com/items?itemName=bierner.color-info), can be useful to quickly find some HSL values for example.
 
 [Colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize), inline background color for your colors written in text.
@@ -86,8 +95,6 @@ IntelliSense for [Tailwind CSS](https://marketplace.visualstudio.com/items?itemN
 [Github Markdown Preview](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview), useful when you want to have a quick visual of the markdown you just wrote.
 
 [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens), provides a good amount of information about your git status.
-
-[Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind), opinionated sorter for TW, didn't tried it yet with Windi tho.
 
 [i18n Ally](https://marketplace.visualstudio.com/items?itemName=Lokalise.i18n-ally), mandatory extension once you do start to have i18n in the project, really!
 
@@ -107,7 +114,19 @@ Some other useful markdown extensions: [Markdown All in One](https://marketplace
 
 [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint), can be useful to lint CSS too.
 
+<details><summary>Recommended setting</summary>
+
+Set the following in your `settings.json`
+```json
+"css.validate": true,
+"less.validate": true,
+"scss.validate": true,
+```
+</details>
+
 [SVG Previewer](https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer), to get a preview inside of VScode directly. And [SVGOCD](https://marketplace.visualstudio.com/items?itemName=shtian.svgocd) to optimize it one of the other.
+
+[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2), not really needed since VScode has released it's own [faster solution](https://code.visualstudio.com/updates/v1_60#_high-performance-bracket-pair-colorization). <Badge type="tip" text="Not useful anymore" vertical="top" />
 
 ## How to setup ESlint + Prettier
 

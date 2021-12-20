@@ -53,3 +53,10 @@ Please do follow the following rules when creating a pull request:
 A squash and merge on Github should be prefered at the end of a Pull request to keep a consistent and keep git history. Otherwise, [an interactive rebase](https://youtu.be/f1wnYdLEpgI) (`git rebase -i`) is the best option.
 
 ![](https://i.imgur.com/MSYqQyM.png)
+
+### Comments during Pull Requests
+Rather than just selecting a single line of code for a comment, please select all the lines concerned by the comment. For example, below we want to give some feedback for the whole `:class` aka lines 35 to 39. Rather than just putting a comment on line 35 or 39, select all of them.
+
+For that, scroll with your mouse button hold while being on the left of the line numbers, when you're satisfied with the selected lines, go to the last line and click on ➕ to add a multi-line comment! 💪
+
+![image](https://user-images.githubusercontent.com/5133074/146698286-f047ef1c-2a50-466a-848d-f0d17115f69c.png)
