@@ -40,7 +40,7 @@ A `PULL_REQUEST_TEMPLATE.md` file is available in `.github` to preset for some d
 ### Draft Pull Request
 
 Please do follow the following rules when creating a pull request:
-- create it when you start to code, as `draft` (you'll pass it to `open` when you're done coding)
+- please create a PR when you're starting to code on a new feature, new branch ➡️ new draft PR (you'll pass it to `open` when you're done coding and feel like it's ready to be merged)
 - ping the people concerned, especially when you're done coding and expect a review
 - name your dev branch with the `type/scope` pattern eg. `fix/navbar-toggle`
 - keep a [clean history](/conventions/code_flow.html#git-history) when merging into `dev` (`main` is reserved to the exposed production code)
@@ -60,3 +60,17 @@ Rather than just selecting a single line of code for a comment, please select al
 For that, scroll with your mouse button hold while being on the left of the line numbers, when you're satisfied with the selected lines, go to the last line and click on ➕ to add a multi-line comment! 💪
 
 ![image](https://user-images.githubusercontent.com/5133074/146698286-f047ef1c-2a50-466a-848d-f0d17115f69c.png)
+
+### Verbose PR descriptions
+
+Please write some summary of what happened in the PR, what was interesting, some nice links, some decision making etc... Anything that can be interesting without the need to scroll down all the conversations to find out what happened would be perfect.
+
+Here is an [example of a verbose PR description](https://github.com/topcoat-data/expandable-modules/pull/2).
+
+![image](https://user-images.githubusercontent.com/5133074/147717377-107ac33e-0d53-469a-97d8-77f3fe69a0b9.png)
+
+### Improve the flow while solving conflicts
+
+This [kind of thing](https://github.com/topcoat-data/expandable-modules/pull/2/commits/ae731cff6c971b4dd08075134fb244ceede4664d) may happen if somebody is merging `dev` after a PR merged into it. It will bring back all the diff of this PR into your own, like it was a real change coming from your side.
+
+This is pretty messy, and even if it is not present in the final "Files changed" section, it is still bug-prone because it's not clear what was changed to solve the conflicts. There is maybe a clean rebase solution, otherwise writing a detailed body for a commit could be a quick and simple solution too! Some pair could also probably solve this issue (any ideas welcome! 👐).

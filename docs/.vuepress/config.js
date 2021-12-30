@@ -17,11 +17,11 @@ module.exports = {
     },
     sidebarDepth: 2,
     sidebar: [{
-      text: 'Guide',
+      text: '🏠 Guide',
       link: '/guide.md',
     },
     {
-      text: 'Tools',
+      text: '🧰 Tools',
       children: [{
         text: 'Packages',
         link: '/tools/packages.md'
@@ -37,7 +37,7 @@ module.exports = {
       ],
     },
     {
-      text: 'Conventions',
+      text: '✨ Conventions',
       children: [{
         text: 'Code flow',
         link: '/conventions/code_flow.md'
@@ -54,14 +54,35 @@ module.exports = {
         text: 'SFC syntax',
         link: '/conventions/sfc_syntax.md'
       },
-      {
-        text: 'Bad practices 💀',
-        link: '/conventions/bad_practices.md'
-      },
       ],
     },
     {
-      text: 'Testing',
+      text: '🤔 Decisions',
+      children: [
+        {
+          text: 'What is an ADR?',
+          link: '/decisions/index.md',
+        },
+        {
+          text: 'Bad practices',
+          link: '/conventions/bad_practices.md'
+        },
+        {
+          text: '⬇️ Components',
+          children: [{
+            text: 't-text-input',
+            link: '/decisions/components/TTextInput.md'
+          },
+          {
+            text: 't-base-button',
+            link: '/decisions/components/TBaseButton.md'
+          },
+          ]
+        },
+      ]
+    },
+    {
+      text: '🧪 Testing',
       children: [{
         text: 'Unit',
         link: '/testing/unit.md',
@@ -73,11 +94,11 @@ module.exports = {
       ],
     },
     {
-      text: 'Deployment',
+      text: '🚀 Deployment',
       link: '/deployment.md',
     },
     {
-      text: 'Known issues',
+      text: '💣 Known issues',
       link: '/known_issues.md',
     },
     ],
