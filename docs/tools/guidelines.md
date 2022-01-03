@@ -6,7 +6,7 @@ We are PNPM, because it's still the fastest, keeps the whole `node_modules` to a
 
 For the most part, it will only be used to add and install NPM packages, so nothing to really worry about.
 
-PS: if you ever need to run a command like `npx sb init` ([installation of Storybook](https://storybook.js.org/docs/vue/get-started/install)), you can use `pnpm dlx sb init` as [explained here](https://pnpm.io/pnpx-cli). That way, you'll be still
+PS: if you ever need to run a command like `npx sb init` ([installation of Storybook](https://storybook.js.org/docs/vue/get-started/install)), you can use `pnpm dlx sb init` as [explained here](https://pnpm.io/pnpx-cli). That way, you'll be still using PNPM and it will be faster.
 
 ## [Vite](https://vite.dev/docs/getting-started)
 
