@@ -28,5 +28,9 @@ Since we're using `nuxtStyle: true` in our [`vite-plugin-pages`](https://github.
 - Meanwhile, this error can also occur in case we're having an auto-imported component used somewhere else, let's say `Footer.vue`. If we update the actual component but do not replace the occurences of `<footer></footer>` in the places it is used, [this error will occur](https://github.com/antfu/vite-ssg/issues/65#issuecomment-972781430).
 - PNPM is now working great with `lint-staged` since the maintainer [fixed a regression](https://github.com/pnpm/pnpm/milestone/71?closed=1) in the latest `6.22` release.
 - The current `tsconfig.json` config file is working great and not causing an ESlint error anymore, [here is](https://stackoverflow.com/questions/42609768/typescript-error-cannot-write-file-because-it-would-overwrite-input-file) a reference to an issue that we once faced.
+- If you have this issue missing peer issue
+![](https://user-images.githubusercontent.com/5133074/147968499-636975b5-04e9-4e4c-93c0-717ee9c3c7f4.png)
+
+You can run `rm -rf node_modules`, then `pnpm i` and you will get your project working fine again, without any compatibility issues.
 
 ## Pending issues
