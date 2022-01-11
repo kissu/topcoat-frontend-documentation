@@ -38,22 +38,27 @@ module.exports = {
     },
     {
       text: '✨ Conventions',
-      children: [{
-        text: 'Code flow',
-        link: '/conventions/code_flow.md'
-      },
-      {
-        text: 'Routing and naming',
-        link: '/conventions/routing.md'
-      },
-      {
-        text: 'Class syntax',
-        link: '/conventions/class_syntax.md'
-      },
-      {
-        text: 'SFC syntax',
-        link: '/conventions/sfc_syntax.md'
-      },
+      children: [
+        {
+          text: 'Generic good practices',
+          link: '/conventions/good_practices.md'
+        },
+        {
+          text: 'Code flow',
+          link: '/conventions/code_flow.md'
+        },
+        {
+          text: 'Routing and naming',
+          link: '/conventions/routing.md'
+        },
+        {
+          text: 'Class syntax',
+          link: '/conventions/class_syntax.md'
+        },
+        {
+          text: 'SFC syntax',
+          link: '/conventions/sfc_syntax.md'
+        },
       ],
     },
     {
