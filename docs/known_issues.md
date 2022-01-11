@@ -34,3 +34,8 @@ Since we're using `nuxtStyle: true` in our [`vite-plugin-pages`](https://github.
 You can run `rm -rf node_modules`, then `pnpm i` and you will get your project working fine again, without any compatibility issues.
 
 ## Pending issues
+
+Not sure how to run the build app in HTTPS. Even if it's [properly installed](https://github.com/FiloSottile/mkcert#linux) (pre-built binaries), we do have an `unexpected error`.
+![image](https://user-images.githubusercontent.com/5133074/148989486-4f157737-0b53-4e78-9efa-d47208642961.png)
+
+Not sure where this one comes from, but I found nothing neither on [Vitesse](https://github.com/antfu/vitesse/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) nor on [Vite](https://github.com/vitejs/vite/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)'s GH issues.
