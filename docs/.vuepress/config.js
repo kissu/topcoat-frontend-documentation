@@ -118,8 +118,8 @@ module.exports = {
       children: [{
         text: 'Internal',
         children: [{
-          text: 'Core frontend 🌠',
-          link: 'https://github.com/topcoat-data/topcoat-core-fe',
+          text: 'Core SPA 🌠',
+          link: 'https://github.com/topcoat-data/core-spa',
         },
         {
           text: 'Expandable modules 💅',
