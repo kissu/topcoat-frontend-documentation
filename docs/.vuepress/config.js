@@ -156,7 +156,7 @@ module.exports = {
       },
       {
         text: 'Design System',
-        link: 'https://zeroheight.com/955194c45/p/117d4d-topcoat-data---component-design-guide',
+        link: 'https://zeroheight.com/3f2afe343/p/68c735-topcoat-themeable-design-system',
       },
       ]
     }
