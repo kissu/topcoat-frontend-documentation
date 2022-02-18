@@ -79,8 +79,12 @@ module.exports = {
             link: '/decisions/components/TTextInput.md'
           },
           {
-            text: 't-base-button',
-            link: '/decisions/components/TBaseButton.md'
+            text: 't-select-input',
+            link: '/decisions/components/TSelectInput.md'
+          },
+          {
+            text: 't-tabs',
+            link: '/decisions/components/TTabs.md'
           },
           ]
         },
